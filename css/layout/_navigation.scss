@@ -1,0 +1,37 @@
+// .burger-menu:hover .nav-wrapper{
+            //     transform: translateY(100%);
+            // }
+            // NAVIGATION PRINCIPALE
+            .nav-wrapper{
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background: #172642d3;
+                transform: translateY(-100%);
+                nav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 50%;
+                    left: 30px;
+                    transform: translateY(-50%);
+                    height: 30%;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 25px;
+                        &:hover{
+                            text-decoration-line: underline;
+                        }
+                    }
+                    a:nth-of-type(6){
+                        display: none;
+                    }
+
+                }
+                
+            }
