@@ -1,2 +1,168 @@
-
+main{
+    // WELCOME
+    section{
+        padding: 18% 8%;
+    }
+    .welcome-wrapper{
+        background: url(../../img/palm-bg.jpg) center/cover;
+        .welcome{
+            background: #fff;
+            height: 100%;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        .white-frame{
+            width: 100%;
+            padding:20px 50px 60px;
+        }
+        }
+    }
+    // IMAGE OCEAN
+    .img-ocean{
+        width: 100%;
+        height: 100vw;
+        background: url(../../img/makena.jpg) center/cover;
+    }
+    // SECTION PARADISE
+    .paradise{
+        .text-content{
+            padding-bottom: 50px;
+        }
+        .images{
+            width: 100%;
+            position: relative;
+            // ISLAND
+            .island{
+                background: url(../../img/Island-portrait.jpg) center/cover;
+                width: 100%;
+                height: 100vw;
+            }
+            .grey-block{
+                background: linear-gradient(180deg, rgba(162,172,179,1) 0%, rgba(204,216,224,1) 100%);
+                width: 100%;
+                height: 86vw;
+                position: absolute;
+                top: 100px;
+                left: 50px;
+                z-index: -1;
+            }
+        }
+    }
+    // SECTION SLIDER
+    .slide-photos{
+        img{
+            width: 100%;
+        }
+        .commande{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            a:nth-of-type(1){
+            margin-right: 15px;
+            }
+            .arrow{
+                fill: #a72c2a;
+                img{
+                    fill: #a72c2a;
+                    width: 18px;
+                }
+            }
+            .pages-select{
+                display: flex;
+                width: 80px;
+                justify-content: space-between;
+                div{
+                    border-radius: 5px;
+                    width: 6px;
+                    height:6px;
+                    border: 1px solid #a72c2a;
+                }
+                div:nth-of-type(3){
+                    width: 25px;
+                }
+                
+            }
+        }
+        
+    }
+}
+// FOOTER
+footer{
+    a{
+        color: #fff;
+    }
+    // 1ER FOOTER
+    .footer-wrapper{
+        color: #fff;
+        padding:25px 8% 8% ;
+        background: #213375;
+        .logo-footer{
+            display: none;
+        }
+        .footer-content{
+            .contact{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 40px;
+                h1{
+                    font-size: 24px;
+                }
+                span{
+                    font-size: 15px;
+                    margin: 4px 0;
+                    a{
+                        text-underline-offset: 3px;
+                    }
+                }
+                .tdn a{
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 3px;
+                    }
+                }
+            }
+            .footer-nav{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 80px;
+                .footer-big-nav{
+                    height: 160px;
+                    a:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 3px;
+                    }
+                }
+                .footer-small-nav{
+                    font-size: 10px;
+                    height: 100px;
+                    a:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                    }
+                }
+                .footer-big-nav, .footer-small-nav{
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+            &>span{
+                opacity: 0.4;
+                font-size: 12px;
+            }
+            &>a img{
+                margin: 30px 0 0;
+                display: block;
+            }
+        }
+    }
+    // FOOTER DEROULANT
+}
 
