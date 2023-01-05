@@ -1,0 +1,98 @@
+// FOOTER
+footer{
+    a{
+        color: #fff;
+    }
+    // 1ER FOOTER
+    .footer-wrapper{
+        color: #fff;
+        padding:25px 8% 8% ;
+        background: #213375;
+        .logo-footer{
+            display: none;
+        }
+        .footer-content{
+            .contact{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 40px;
+                h1{
+                    font-size: 24px;
+                }
+                span{
+                    font-size: 15px;
+                    margin: 4px 0;
+                    a{
+                        text-underline-offset: 3px;
+                    }
+                }
+                .tdn a{
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 3px;
+                    }
+                }
+            }
+            .footer-nav{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 80px;
+                .footer-big-nav{
+                    height: 160px;
+                    a:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 3px;
+                    }
+                }
+                .footer-small-nav{
+                    font-size: 10px;
+                    height: 100px;
+                    a:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                    }
+                }
+                .footer-big-nav, .footer-small-nav{
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+            &>span{
+                opacity: 0.4;
+                font-size: 12px;
+            }
+            &>a img{
+                margin: 30px 0 0;
+                display: block;
+            }
+        }
+    }
+    // FOOTER DEROULANT
+    .disclaim{
+        background: #131f4b;
+        padding:25px 8% 8% ;
+        h3{
+            margin: 30px 0;
+            font-size: 12px;
+
+        }
+        p{
+            font-size: 12px;
+            line-height: 22px;
+        }
+        
+        h3, p{
+            color: white;
+            opacity: 0.5;
+        }
+
+        
+    }
+}

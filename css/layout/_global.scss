@@ -2,13 +2,25 @@
 body{
     font-family: $main-font;
     font-weight: 200;
+    background: #f1f9fc;
+    section{
+        padding: 18% 8%;
+        @media screen and (min-width:1000px){
+            padding: 8% 9%;
+            height: 135vh;
+        }
+    }
     h1{
         font-weight: 200;
         font-size: 31px;
+        @media screen and (min-width:1000px){
+        font-size: 40px;
+        }
     }
     h2{
         font-weight: 400;
         font-size: 15px;
+        
     }
     h3{
         margin: 50px 0 20px;
@@ -16,21 +28,30 @@ body{
         color: #a02f49;
         font-size: 12px;
         font-weight: 900;
+        @media screen and (min-width:1000px){
+            font-size: 15px;
+            }
     }
     section h1{
         line-height: 35px;
         font-size: 27px;
         margin: 0px 0px 50px;
         color: #2e3a77;
+        @media screen and (min-width:1000px){
+        font-size: 48px;
+        line-height: 60px;
+        }
     }
     .button{
         font-size: 12px;
         font-weight: 600;
-        padding:15px 20px;
+        padding:16px 24px;
         color: #a02f49;
         border: 1px solid #a02f49;
         text-transform: uppercase;
         text-decoration: none;
+        @media screen and (min-width:1000px){
+        }font-size: 14px;
         &:hover{
             color: #fff;
             background: #a02f49;

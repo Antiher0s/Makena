@@ -1,7 +1,7 @@
 
 header{
-    height: 100vh;
     video{
+        width: 100%;
         object-fit: cover;
         display: block;
         height: 100vh;
@@ -32,6 +32,10 @@ header{
                 height: 15px;
                 cursor: pointer;
                 position: relative;
+                // BURGER MENU FULL SCREEN
+                @media screen and (min-width:1000px) {
+                    display: none;
+                }
                 // BRUGER MENU SURVOL
                 &:hover{
                     div:nth-of-type(1){
@@ -78,11 +82,36 @@ header{
         }
         // TITRE HEADER
         .titles{
-            max-width: 300px;
+            height: 100%;
             z-index: -1;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            @media screen and (min-width:1000px){
+                padding-bottom: 100px;
+            div{
+                @media screen and (min-width:1000px){
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    }
+            }
+            }
+            h1{
+                max-width: 500px;
+                @media screen and (min-width:1000px){
+                    font-size: 54px;
+                    }
+            }
             h2{
                 margin-bottom: 40px;
+                @media screen and (min-width:1000px){
+                margin-bottom: 8px;
+
+                    font-size: 20px;
+                    }
+                
             }
             .arrow{
                 margin-top: 30px;
@@ -92,6 +121,9 @@ header{
                 border: 1px solid white;
                 &:hover{
                     opacity: 0.3;
+                }
+                @media screen and (min-width:1000px){
+                margin-top: 0;
                 }
             }
         }

@@ -1,21 +1,59 @@
 main{
     // WELCOME
-    section{
-        padding: 18% 8%;
-    }
     .welcome-wrapper{
         background: url(../../img/palm-bg.jpg) center/cover;
         .welcome{
-            background: #fff;
             height: 100%;
             width: 100%;
+            @media screen and (min-width:1000px){
+            position: relative;
+            }
+            
             img{
+                display: block;
                 width: 100%;
+                @media screen and (min-width:1000px){
+                width: 76%;
+                }
             }
         .white-frame{
+            background: #fff;
+
             width: 100%;
             padding:20px 50px 60px;
+            @media screen and (min-width:1000px){
+                width: 720px;
+                height: 500px;
+                position: absolute;
+                top: 15%;
+                right: 0;
+                z-index: 20;
+                padding: 40px 100px ;
+            }
         }
+        }
+    }
+    // RESIDENCES (FULL SCREEN)
+    .residences{
+        background: #fff;
+        @media screen and (min-width:1000px){
+        display: flex;
+        justify-content: space-around;
+        height: 60vh;
+        padding: 8% 4%;
+        }
+        h1{
+            @media screen and (min-width:1000px){
+            width: 40%;
+            }
+        }
+        p{
+            @media screen and (min-width:1000px){
+                width: 35%;
+                font-size: 18px;
+                line-height: 32px;
+            
+            }
         }
     }
     // IMAGE OCEAN
@@ -23,20 +61,46 @@ main{
         width: 100%;
         height: 100vw;
         background: url(../../img/makena.jpg) center/cover;
+        @media screen and (min-width:1000px){
+        height: 110vh;}
     }
     // SECTION PARADISE
     .paradise{
+        @media screen and (min-width:1000px){
+        height: 120vh;
+        display: flex;
+        justify-content: space-between;
+        }
         .text-content{
             padding-bottom: 50px;
+            @media screen and (min-width:1000px){
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            p{
+                @media screen and (min-width:1000px){
+                font-size: 18px;
+                width: 500px;
+                line-height: 35px;
+                }
+            }
         }
         .images{
             width: 100%;
             position: relative;
+            @media screen and (min-width:1000px){
+            width: 40%;
+            }
             // ISLAND
             .island{
                 background: url(../../img/Island-portrait.jpg) center/cover;
                 width: 100%;
                 height: 100vw;
+                @media screen and (min-width:1000px){
+                height: 100%;
+                }
             }
             .grey-block{
                 background: linear-gradient(180deg, rgba(162,172,179,1) 0%, rgba(204,216,224,1) 100%);
@@ -46,123 +110,68 @@ main{
                 top: 100px;
                 left: 50px;
                 z-index: -1;
+                @media screen and (min-width:1000px){
+                height: 95%;
+                }
             }
         }
     }
     // SECTION SLIDER
-    .slide-photos{
-        img{
-            width: 100%;
-        }
-        .commande{
+    .slider{
+        @media screen and (min-width:1000px){
             display: flex;
             justify-content: space-between;
-            margin: 20px 0;
-            a:nth-of-type(1){
-            margin-right: 15px;
+            padding: 8% 8%;
+        }
+        .slide-photos{
+            @media screen and (min-width:1000px){
+            width: 55%;
             }
-            .arrow{
-                fill: #a72c2a;
-                img{
+            img{
+                width: 100%;
+            }
+            .commande{
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                a:nth-of-type(1){
+                margin-right: 15px;
+                }
+                .arrow{
                     fill: #a72c2a;
-                    width: 18px;
-                }
-            }
-            .pages-select{
-                display: flex;
-                width: 80px;
-                justify-content: space-between;
-                div{
-                    border-radius: 5px;
-                    width: 6px;
-                    height:6px;
-                    border: 1px solid #a72c2a;
-                }
-                div:nth-of-type(3){
-                    width: 25px;
-                }
-                
-            }
-        }
-        
-    }
-}
-// FOOTER
-footer{
-    a{
-        color: #fff;
-    }
-    // 1ER FOOTER
-    .footer-wrapper{
-        color: #fff;
-        padding:25px 8% 8% ;
-        background: #213375;
-        .logo-footer{
-            display: none;
-        }
-        .footer-content{
-            .contact{
-                display: flex;
-                flex-direction: column;
-                padding-bottom: 40px;
-                h1{
-                    font-size: 24px;
-                }
-                span{
-                    font-size: 15px;
-                    margin: 4px 0;
-                    a{
-                        text-underline-offset: 3px;
+                    img{
+                        fill: #a72c2a;
+                        width: 18px;
+                        @media screen and (min-width:1000px){
+                        width: 25px;
+                        }
                     }
                 }
-                .tdn a{
-                    text-decoration: none;
-                    &:hover{
-                        text-decoration: underline;
-                        text-underline-offset: 3px;
-                    }
-                }
-            }
-            .footer-nav{
-                width: 80%;
-                display: flex;
-                justify-content: space-between;
-                margin: 0 0 80px;
-                .footer-big-nav{
-                    height: 160px;
-                    a:hover{
-                        text-decoration: underline;
-                        text-underline-offset: 3px;
-                    }
-                }
-                .footer-small-nav{
-                    font-size: 10px;
-                    height: 100px;
-                    a:hover{
-                        text-decoration: underline;
-                        text-underline-offset: 2px;
-                    }
-                }
-                .footer-big-nav, .footer-small-nav{
-                    font-weight: 400;
+                .pages-select{
                     display: flex;
-                    flex-direction: column;
+                    width: 80px;
                     justify-content: space-between;
-                    a{
-                        text-decoration: none;
+                    div{
+                        border-radius: 5px;
+                        width: 6px;
+                        height:6px;
+                        border: 1px solid #a72c2a;
                     }
+                    div:nth-of-type(3){
+                        width: 25px;
+                    }
+                
                 }
             }
-            &>span{
-                opacity: 0.4;
-                font-size: 12px;
-            }
-            &>a img{
-                margin: 30px 0 0;
-                display: block;
+
+        }
+        .text-content{
+            @media screen and (min-width:1000px){
+            width: 45%;
+            padding: 4% 10%;
             }
         }
     }
-    // FOOTER DEROULANT
 }
+
 
